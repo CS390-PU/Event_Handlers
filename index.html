@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <head>
+  <title>Page Title</title>
+  <script>
+    const btn3 = document.querySelector('#btn3');
+    btn3.onclick = function() {
+      alert('Button 3 Event Handled');
+    }
+
+    const btn4 = document.querySelector('#btn4');
+    btn4.addEventListener('click', function(event) {
+        alert("Button 4 " + event.type + " Event Handled"); // click
+    });
+  </script>
+  </head>
+    <body>
+      Event Handler Method #1<p></p>
+      <button onclick="document.bgColor='teal'; document.body.style.color='blue'">Button 1</button>
+      <button onclick="alert(event.type)">Button 2</button>  
+      <p></p>
+
+      Event Handler Method #2<p></p>
+      <button id = "btn3">Button 3</button>
+      <p></p>
+
+      Event Handler Method #3<p></p>
+      <button id = "btn4">Button 4</button>
+    </body>
+</html>
